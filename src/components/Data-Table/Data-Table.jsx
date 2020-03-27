@@ -23,7 +23,8 @@ const DataTable = ({ salesData, month, title }) => {
     }
   }
 
-  salesData.map(name => console.log(name));
+  console.log(month.id);
+
   return (
     <div className="data-table">
       <h2 className="data-table__title">{title}</h2>
@@ -45,7 +46,11 @@ const DataTable = ({ salesData, month, title }) => {
               oranges,
               ...props
             }) => (
-              <tr key={id}>
+              <tr
+                key={id}
+                id={id}
+                className={id === month.id ? "data-table__selected" : null}
+              >
                 <td>{`${date.month}/${date.day}/${date.year}`}</td>
                 <td>{bananas}</td>
                 <td>{strawberries}</td>
