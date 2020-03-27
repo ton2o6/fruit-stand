@@ -19,6 +19,8 @@ const Chart = ({ legendPosition, monthSales }) => {
     monthTotal
   ];
 
+  console.log(monthTotal);
+
   let chartTitle = `Sale Date: ${monthSales.date.month}/${monthSales.date.day}/${monthSales.date.year}`;
 
   let fruits = ["Bananas", "Strawberries", "Apples", "Oranges", "All Fruits"];

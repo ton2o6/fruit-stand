@@ -4,13 +4,27 @@ import { connect } from "react-redux";
 // Styles
 import "./Data-Table.scss";
 
-let dataTableLabels = [];
-
 const DataTable = ({ salesData, month, title }) => {
-  if (dataTableLabels.length < 1) {
-    for (let key in salesData[salesData.length - 1]) {
+  // This will dynamically return the table header based on the most recent addition to the DB.
+  let dataTableLabels = [];
+  let lastDataEntered = [];
+
+  if (dataTableLabels[0] === undefined) {
+    for (let key in salesData[0]) {
       if (key !== "id") {
         dataTableLabels.push(key);
+      }
+    }
+    for (let key in salesData[salesData.length - 1]) {
+      if (key !== "id") {
+        lastDataEntered.push(key);
+      }
+    }
+    if (lastDataEntered.length > dataTableLabels.length) {
+      for (let key in salesData[salesData.length - 1]) {
+        if (key !== "id") {
+          dataTableLabels = [...lastDataEntered];
+        }
       }
     }
   }
@@ -22,8 +36,6 @@ const DataTable = ({ salesData, month, title }) => {
       arr.push(dataTableLabels[x]);
     }
   }
-
-  console.log(month.id);
 
   return (
     <div className="data-table">
