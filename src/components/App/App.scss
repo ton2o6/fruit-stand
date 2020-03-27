@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  margin: 5%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  &-data-table,
+  &-chart {
+    border: 1px solid #eee;
+    border-radius: 0.25rem;
+    padding: 1rem 2rem 2rem;
+    margin: 1rem 0;
+  }
+
+  &-drop-down-button {
+    position: absolute;
+  }
+}
