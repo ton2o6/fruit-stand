@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { dropDownSelect } from "../../redux/Drop-Down/Drop-Down.action";
+import PropTypes from "prop-types";
 
 // Styles
 import "./Drop-Down.scss";
@@ -10,10 +11,12 @@ class DropDown extends React.Component {
     showToggle: false
   };
 
+  // This will show or hide the drop down button when clicked
   handleToggle = () => {
     this.setState({ showToggle: !this.state.showToggle });
   };
 
+  // This returns the selected item from the drop down
   handleSelect = e => {
     this.props.dropDownSelect(e);
     this.setState({ showToggle: !this.state.showToggle });
@@ -21,7 +24,7 @@ class DropDown extends React.Component {
 
   render() {
     const { showToggle } = this.state;
-    const { dropDown } = this.props;
+    const { dropDown, label } = this.props;
     return (
       <div className="drop-down">
         <button
@@ -30,7 +33,7 @@ class DropDown extends React.Component {
           type="button"
           data-toggle="drop-down"
         >
-          Select Dates
+          {label}
           <span className="drop-down__icon">&#9660;</span>
         </button>
         {showToggle ? (
@@ -50,6 +53,12 @@ class DropDown extends React.Component {
     );
   }
 }
+
+DropDown.propTypes = {
+  dropDown: PropTypes.array,
+  label: PropTypes.string,
+  showToggle: PropTypes.bool
+};
 
 const mapStateToProps = state => {
   return { dropDown: state.salesData.DATA };

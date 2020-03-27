@@ -1,6 +1,6 @@
 import { DATA } from "../../data/data";
 
-const MONTH = DATA[DATA.length - 1];
+const MONTH = DATA[DATA.length - 1]; // Returns the most current month data
 
 const dropDownReducer = (state = { DATA, MONTH }, action) => {
   switch (action.type) {
@@ -11,6 +11,7 @@ const dropDownReducer = (state = { DATA, MONTH }, action) => {
         if (action.payload === month) {
           return (state.MONTH = state.DATA[index]);
         }
+        return { ...state };
       });
       return { ...state };
     default:

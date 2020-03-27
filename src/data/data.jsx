@@ -1,3 +1,4 @@
+// Some dummy data. This replicates data from a database.
 export const DATA = [
   {
     id: 1,
