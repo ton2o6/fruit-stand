@@ -22,7 +22,7 @@ class App extends React.Component {
             <DataTable title="Sales Report" />
           </div>
           <div className="App-chart">
-            <Chart legendPosition="top" />
+            <Chart legendPosition="top" title="Sale Date:"/>
           </div>
         </div>
       </div>

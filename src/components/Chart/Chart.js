@@ -8,7 +8,7 @@ import { Bar } from "react-chartjs-2";
 // Styles
 import './Chart.scss'
 
-const Chart = ({ legendPosition, monthSales }) => {
+const Chart = ({ legendPosition, monthSales, title }) => {
   // Array of fruits for total sales
   const fruitsList = [
     monthSales.bananas,
@@ -32,7 +32,7 @@ const Chart = ({ legendPosition, monthSales }) => {
   ];
 
   // Chart's title
-  const chartTitle = `Sale Date: ${monthSales.date.month}/${monthSales.date.day}/${monthSales.date.year}`;
+  const chartTitle = `${title} ${monthSales.date.month}/${monthSales.date.day}/${monthSales.date.year}`;
 
   // Chart's columns
   const fruits = ["Bananas", "Strawberries", "Apples", "Oranges", "All Fruits"];
