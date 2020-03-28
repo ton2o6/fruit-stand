@@ -6,7 +6,7 @@ Hosted on Firebase: https://fruit-stand-9af2b.firebaseapp.com/
 
 ---
 
-Instructions to install and run the app locally, apply step 1 - 4. To test the app, apply step 5. 
+To install and run the app locally, apply step 1 - 4. To test the app, apply step 5. 
 
 **`1. git clone https://github.com/ton2o6/fruit-stand.git`**
 
