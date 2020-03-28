@@ -5,6 +5,9 @@ import PropTypes from "prop-types";
 // Chart.js
 import { Bar } from "react-chartjs-2";
 
+// Styles
+import './Chart.scss'
+
 const Chart = ({ legendPosition, monthSales }) => {
   // Array of fruits for total sales
   const fruitsList = [
@@ -44,7 +47,7 @@ const Chart = ({ legendPosition, monthSales }) => {
   ];
 
   return (
-    <div>
+    <div className="Chart">
       <Bar
         data={{
           labels: fruits,
