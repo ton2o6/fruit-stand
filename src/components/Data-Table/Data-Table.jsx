@@ -28,7 +28,8 @@ const DataTable = ({ salesData, month, title }) => {
   return (
     <div className="data-table">
       <h2 className="data-table__title">{title}</h2>
-      <table className="data-table__table">
+      <div className="data-table__table">
+        <table className="data-table__table">
         <tbody>
           <tr>
             {dataTableLabels.map((label, index) => (
@@ -61,6 +62,7 @@ const DataTable = ({ salesData, month, title }) => {
           )}
         </tbody>
       </table>
+      </div> 
     </div>
   );
 };
