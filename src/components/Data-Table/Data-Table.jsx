@@ -8,7 +8,7 @@ import "./Data-Table.scss";
 const DataTable = ({ salesData, month, title }) => {
   const dataTableLabels = [];
   const tableHeader = [];
-
+  
   // Add table header
   if (dataTableLabels[0] === undefined) {
     for (let key in salesData[0]) {
