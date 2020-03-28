@@ -2,21 +2,25 @@
 
 ## Fruit Stand Sales Report
 
-Instructions to install and run the app locally
+Hosted on Firebase: https://fruit-stand-9af2b.firebaseapp.com/
+
+---
+
+Instructions to install and run the app locally. Step 5 is to run a test on the app. 
 
 ### `1. git clone https://github.com/ton2o6/fruit-stand.git`
 
-### `2. yarn install`
+### `2. cd fruit-stand`
 
-### `3. yarn start`
+### `3. yarn install`
 
-Test the app by running this command
+### `4. yarn start`
 
-### `yarn test`
+### `5. yarn test`
 
 --- 
 
-I included the Chart.js library to easily apply data viz. Also made the app responsive for mobile devices. When you select a date from the drop down, it will highlight the row in the table for you to easily see what ou selected, it also changes the date in the chart title, and auto populate the data within the bar chart. You can find this app hosted at firebase with the url of https://fruit-stand-9af2b.firebaseapp.com/
+I included the Chart.js library to easily apply data viz. Also made the app responsive for mobile devices. When you select a date from the drop down, it will highlight the row in the table for you to easily see what ou selected, it also changes the date in the chart title, and auto populate the data within the bar chart. 
 
 --- 
 
