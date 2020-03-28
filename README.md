@@ -2,15 +2,17 @@
 
 ## Fruit Stand Sales Report
 
-After you do a git clone, run npm i to install all the dependencies. 
+Instructions to install and run the app locally
 
-### `yarn start`
+### `1. git clone https://github.com/ton2o6/fruit-stand.git`
 
-Runs the app in the development mode.<br />
+### `2. yarn install`
+
+### `3. yarn start`
+
+Test the app by running this command
 
 ### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
 
 --- 
 
