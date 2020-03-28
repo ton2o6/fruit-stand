@@ -3,7 +3,7 @@
   margin: 5%;
   box-sizing: border-box;
   font-family: sans-serif;
-  min-width: 625px;
+  min-width: 495px;
 
   &-data-table,
   &-chart {
@@ -18,8 +18,16 @@
   }
 }
 
+
+
 @media(min-width: 1240px){
-    .App {
-      margin: 5% 15%;
-    }
+  
+}
+
+@media(max-width: 575px){
+  .App {
+    margin: 5% 0;
   }
+}
+
+
