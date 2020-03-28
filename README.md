@@ -28,10 +28,10 @@ I included the Chart.js library to easily apply data viz. Also made the app resp
 
 **Lighthouse Audit score for desktop** 
 
-**93 92 100 100**
+**93 - 92 - 100 - 100**
 
 --- 
 
 **Lighthouse Audit score for mobile**
 
-**91 100 100 100**
+**91 - 100 - 100 - 100**
