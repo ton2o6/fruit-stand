@@ -1,10 +1,10 @@
 import React from 'react';
 import Chart from './../Chart';
 
-let mockLegend = 'top';
-let mockTitle = 'Sale Date:';
+const mockLegend = 'top';
+const mockTitle = 'Sale Date:';
 
-let mockSales = [
+const mockSales = [
   {
     id: 1,
     date: {
@@ -32,18 +32,18 @@ let mockSales = [
 ];
 
 test('return the title', () => {
-  let chart = <Chart title={mockTitle}/>;
+  const chart = <Chart title={mockTitle}/>;
   expect(chart.props.title).toBe('Sale Date:');
 })
 
 test('return the legend position', () => {
-  let chart = <Chart legendPosition={mockLegend}/>;
+  const chart = <Chart legendPosition={mockLegend}/>;
   expect(chart.props.legendPosition).toBe('top');
 })
 
 test('return an array of mock data', () => {
-  let chart = <Chart monthSales={mockSales}/>;
-  let testArray = [{
+  const chart = <Chart monthSales={mockSales}/>;
+  const testArray = [{
         id: 1,
         date: { year: 2020, month: 1, day: 7 },
         bananas: 401,
@@ -67,7 +67,7 @@ test('return an array of mock data', () => {
 })
 
 test('return the amount of oranges in the first set of data. should be 191', () => {
-  let chart = <Chart monthSales={mockSales}/>;
+  const chart = <Chart monthSales={mockSales}/>;
   expect(chart.props.monthSales[0].oranges).toBe(191)
 })
 
