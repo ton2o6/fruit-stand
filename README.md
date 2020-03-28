@@ -20,6 +20,8 @@ To install and run the app locally, apply step 1 - 4. To test the app, apply ste
 
 --- 
 
+**Dev Notes** 
+
 I included the Chart.js library to easily apply data viz. Also made the app responsive for mobile devices. When you select a date from the drop down, it will highlight the row in the table for you to easily see what you selected, it also changes the date in the chart title, and auto populate the data within the bar chart. 
 
 --- 
